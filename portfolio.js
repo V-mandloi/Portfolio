@@ -31,7 +31,7 @@ document.addEventListener('click', () => {
 // smooth scroll js starts
 
 var navMenuAnchorTags = document.querySelectorAll('.navbar a');
-
+console.log(navMenuAnchorTags);
 
 for (var i = 0; i < navMenuAnchorTags.length;i++) {
     navMenuAnchorTags[i].addEventListener('click', function(event) {
@@ -53,3 +53,46 @@ for (var i = 0; i < navMenuAnchorTags.length;i++) {
 
 // smooth scroll js ends
  
+
+// button for next section starts
+
+
+let currentSection = null;
+
+var currentSectionId = setInterval(() => {
+    const currentScrollPosition = window.scrollY;
+
+// Select all sections on the page
+const sections = document.querySelectorAll("section");
+
+// Find the section that is currently in view
+sections.forEach(section => {
+  const sectionTop = section.offsetTop;
+//   console.log(sectionTop);
+  const sectionBottom = sectionTop + section.offsetHeight;
+
+  if (currentScrollPosition >= sectionTop && currentScrollPosition <= sectionBottom) {
+    currentSection = section.offsetTop;
+    
+  }
+});
+
+// Log the found section to the console
+console.log(currentSection);
+}, 10000);
+
+var sectionButton = document.getElementById("scroll-button");
+sectionButton.addEventListener("click", () => {
+    window.scrollBy(0, 716);
+    console.log(currentSection);
+})
+console.log(sectionButton);
+
+
+
+/*location for divbutton*/
+var buttonForLoc = document.getElementById("scroll-button");
+var locationButton = setInterval(() => {
+    
+})
+// button for next section ends

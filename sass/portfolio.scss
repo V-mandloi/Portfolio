@@ -308,28 +308,38 @@ body, html, *{
 /* mouse animation ends */
 
 
-
-/* home page css ends */
-
-
-/* about page css starts */
-
-.about-page-siz{
-    width: auto;
-    height: 100vh;
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    
+// button starts
+.bottombutton{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 700px;
+    transform: translate(-50px, -50px);
+    #scroll-button{
+        width: 50px;
+        height: 50px;
+        padding: 8px;
+        position: sticky;
+        background-color: rgb(37 37 37);
+        border: 0xp solid black;
+        border-radius: 5px;
+        color: rgb(118, 118, 118);
+        &:hover{
+            background-color: transparent;
+            color: white;
+        }
+        #arrow-icon{
+            font-size: 35px;
+        }
+    }
 
 }
 
-/* about page css ends */
-
-
-
-
+// button ends
+/* home page css ends */
 
 
 
