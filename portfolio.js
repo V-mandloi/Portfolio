@@ -58,7 +58,7 @@ for (var i = 0; i < navMenuAnchorTags.length;i++) {
 
 
 let currentSection = null;
-
+let currentBottom = null;
 var currentSectionId = setInterval(() => {
     const currentScrollPosition = window.scrollY;
 
@@ -73,18 +73,34 @@ sections.forEach(section => {
 
   if (currentScrollPosition >= sectionTop && currentScrollPosition <= sectionBottom) {
     currentSection = section.offsetTop;
-    
+    // console.log(currentSection);
+    // console.log(currentSection.offsetHeight);
+    currentBottom = currentSection + 716;
   }
 });
 
 // Log the found section to the console
-console.log(currentSection);
-}, 10000);
-
+// console.log(currentBottom);
+}, 1000);
+// console.log(currentBottom);
 var sectionButton = document.getElementById("scroll-button");
+// let targetpoint;
+let locationButton = setInterval(() => {
+    var locat = window.scrollY;
+    // console.log(locat);
+    let targetpoint = null;
+for(var i = locat; i <= currentSection + 716; i++){
+    targetpoint++;
+}
+// console.log(targetpoint);
+return (targetpoint);
+}, 100);
+console.log(targetpoint);
+
+
 sectionButton.addEventListener("click", () => {
-    window.scrollBy(0, 716);
-    console.log(currentSection);
+    window.scrollBy(0, targetpoint);
+
 })
 console.log(sectionButton);
 
@@ -92,7 +108,33 @@ console.log(sectionButton);
 
 /*location for divbutton*/
 var buttonForLoc = document.getElementById("scroll-button");
-var locationButton = setInterval(() => {
-    
-})
+// var locationButton = setInterval(() => {
+//     var locat = window.scrollY;
+//     // console.log(locat);
+//     var targetpoint = null;
+// for(var i = locat; i <= currentSection + 716; i++){
+//     targetpoint++;
+// }
+// // console.log(targetpoint);
+// }, 100);
 // button for next section ends
+
+
+
+// mouse animation click scroll
+
+
+$(".mousey").click(function() {
+    window.scrollBy(0, 716);
+})
+
+
+// var mouseclick = () => {
+//     var clickOnMouse = document.getElementsByClassName("scroller");
+//     console.log(clickOnMouse);
+//     clickOnMouse.addEventListener("click", () => {
+//         console.log("button was clicked");
+//         window.scrollBy(0, 50);
+//     });
+// }
+// mouse animation click scroll ends
