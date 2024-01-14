@@ -317,7 +317,7 @@ body::-webkit-scrollbar {
   top: 700px;
   transform: translate(-50px, -50px);
 }
-.bottombutton #scroll-button {
+.bottombutton #scrollButton {
   width: 50px;
   height: 50px;
   padding: 8px;
@@ -327,11 +327,11 @@ body::-webkit-scrollbar {
   border-radius: 5px;
   color: rgb(118, 118, 118);
 }
-.bottombutton #scroll-button:hover {
+.bottombutton #scrollButton:hover {
   background-color: transparent;
   color: white;
 }
-.bottombutton #scroll-button #arrow-icon {
+.bottombutton #scrollButton #arrow-icon {
   font-size: 35px;
 }
 
