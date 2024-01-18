@@ -48,8 +48,8 @@ for (var i = 0; i < navMenuAnchorTags.length;i++) {
                 clearInterval(interval);
                 return;
             }
-            window.scrollBy(0, 20);
-        }, 20);
+            window.scrollBy(0, 11);
+        }, 10);
     });
 }
 
