@@ -1,29 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.about-page-size {
-  width: auto;
-  height: 100vh;
-  background-color: #daffb6;
-}
+@import url("/dist/css/about.css");
+@import url("/dist/css/Skills.css");
+@import url("/dist/css/Projects.css");
+@import url("/dist/css/Contacts.css");
 
-.skills-page-size {
-  width: auto;
-  height: 100vh;
-  background-color: #b9ff73;
-}
-
-.contact-page-size {
-  width: auto;
-  height: 100vh;
-  background-color: #84ff09;
-}
-
-.projects-page-size {
-  width: auto;
-  height: 100vh;
-  background-color: #a5ff4b;
-}
 
 body, html, * {
   margin: 0;
@@ -165,6 +147,7 @@ body::-webkit-scrollbar {
   width: auto;
   height: 100vh;
   background-size: cover;
+  overflow: hidden;
 }
 
 .home-align-flex {
@@ -322,7 +305,6 @@ body::-webkit-scrollbar {
   height: 50px;
   padding: 8px;
   position: absolute;
-  background-color: rgb(37, 37, 37);
   border: 0xp solid black;
   border-radius: 5px;
   color: rgb(118, 118, 118);
@@ -352,6 +334,9 @@ body::-webkit-scrollbar {
     font-family: var(--font);
     font-size: 50px;
   }
+  .bottombutton {
+    display: none;
+  }
 }
 @media screen and (max-width: 1500px) and (min-width: 1024px) {
   .home-content {
@@ -364,10 +349,21 @@ body::-webkit-scrollbar {
     justify-content: center;
     margin-left: 180px;
   }
+  .bottombutton {
+    top: 640px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .bottombutton {
+    top: 640px;
+  }
 }
 @media screen and (max-width: 800px) {
   .navbar ul {
     padding: 0;
+  }
+  .bottombutton {
+    top: 640px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -385,6 +381,7 @@ body::-webkit-scrollbar {
     display: none;
     width: 100%;
     text-align: center;
+    z-index: 99;
   }
   .resume-button {
     text-align: center;
@@ -395,5 +392,8 @@ body::-webkit-scrollbar {
   }
   .mousey {
     display: none;
+  }
+  .bottombutton {
+    top: 640px;
   }
 }/*# sourceMappingURL=portfolio.css.map */

@@ -48,8 +48,8 @@ for (var i = 0; i < navMenuAnchorTags.length;i++) {
                 clearInterval(interval);
                 return;
             }
-            window.scrollBy(0, 5);
-        }, 0.5);
+            window.scrollBy(0, 20);
+        }, 20);
     });
 }
 
@@ -97,17 +97,25 @@ sections.forEach(section => {
 
 
 var sectionButton = document.getElementById("scrollButton");
-sectionButton.addEventListener("click", () => {
-    var locat = window.scrollY;
-    let targetpoint = null;
-console.log(currentSection);
-
-for(var i = locat;  i <= currentSection + currentHeight; i++){
-    targetpoint++;
+function clickScroll(){
+    sectionButton.addEventListener("click", () => {
+        var locat = window.scrollY;
+        // console.log(locat);
+        let targetpoint = null;
+    console.log(currentSection);
+    
+    for(var i = locat;  i <= currentSection + currentHeight; i++){
+        targetpoint++;
+    
+    }   
+        var targetpoint2 = locat + targetpoint;
+        // console.log(targetpoint);
+        // window.scrollBy(0, targetpoint);
+        window.scrollTo({ top: targetpoint2, behavior: "smooth" });
+    
+    })
 }
-    window.scrollBy(0, targetpoint);
-
-})
+clickScroll();
 // console.log(sectionButton);
 
 
@@ -121,10 +129,10 @@ $(".mousey").click(function() {
     var interval = setInterval(function() {
             var homeSection = document.getElementById("about");
 
-        var targetSectionCoordinates = homeSection.getBoundingClientRect();
-        console.log(targetSectionCoordinates.bottom);
+        var targetSectionCoordinat = homeSection.getBoundingClientRect();
+        console.log(targetSectionCoordinat.bottom);
 
-            if(targetSectionCoordinates.top <= 0){
+            if(targetSectionCoordinat.top <= 0){
                 clearInterval(interval);
                 return;
             }

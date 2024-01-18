@@ -1,9 +1,59 @@
 // about page starts
 
+@font-face {
+    font-family: "robot";
+    src: url(/Fonts/L0xkDF4xlVMF-BfR8bXMIjDwjmqxf78.woff2);
+}
+
 .about-page-size{
-    width: auto;
+    width: 100vw;
     height: 100vh;
-    background-color: #daffb6;
+    background: rgb(12,13,20);
+    background: linear-gradient(95deg, rgba(12,13,20,1) 51%, rgba(21,25,33,1) 62%, rgba(10,16,32,1) 72%);
+    transform: translate(0, 50%) scale(0.9);
+    // position: relative;
+    font-family: "roboto";
+
+
+
+    &::before{
+        // width: 100vw;
+        // height: 100vh;
+        content: "About";
+        font-family: "roboto";
+        font-size: 8vw;
+        font-weight: bold;
+        color: #03020a;
+        // border: 2px solid blac;
+        position: absolute;
+        transform: translate(78vw, 10vh) scale(1);
+    }
+}
+
+.about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+    .first{
+        color: black;
+        position: absolute;
+        // left:0px;
+        top: 200px;
+    }
+    .second{
+        position: absolute;
+        right: 100;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        // transform: translate();
+    }
 }
 
 

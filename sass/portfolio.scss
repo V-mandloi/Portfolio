@@ -1,10 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "about";
-@import "Skills";
-@import "Contacts";
-@import "Projects";
 
 
 
@@ -164,6 +160,7 @@ body::-webkit-scrollbar {
     width: auto;
     height: 100vh;
     background-size: cover;
+    overflow: hidden;
 }
 
 .home-align-flex{
@@ -329,7 +326,7 @@ body::-webkit-scrollbar {
         height: 50px;
         padding: 8px;
         position: absolute;
-        background-color: rgb(37 37 37);
+        // background-color: rgb(37 37 3;
         border: 0xp solid black;
         border-radius: 5px;
         color: rgb(118, 118, 118);
@@ -368,6 +365,10 @@ body::-webkit-scrollbar {
     font-size: 50px;
 }
 
+.bottombutton{
+    display: none;
+}
+
 }
 
 @media  screen and (max-width: 1500px) and (min-width: 1024px) {
@@ -381,6 +382,18 @@ body::-webkit-scrollbar {
     justify-content: center;
     margin-left: 180px;
 }
+
+.bottombutton{
+    top: 640px;
+}
+
+}
+
+@media screen and (max-width : 1024px) {
+    .bottombutton{
+        top: 640px;
+    }
+    
 }
 
 
@@ -388,6 +401,10 @@ body::-webkit-scrollbar {
     .navbar ul{
         padding: 0;
     }
+    .bottombutton{
+        top: 640px;
+    }
+    
 }
 
 
@@ -408,6 +425,7 @@ body::-webkit-scrollbar {
         display: none;
         width: 100%;
         text-align: center ;
+        z-index: 99;
     }
 
     .resume-button{
@@ -422,4 +440,9 @@ body::-webkit-scrollbar {
     .mousey{
         display: none;
     }
+
+    .bottombutton{
+        top: 640px;
+    }
+    
 }
