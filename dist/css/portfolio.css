@@ -1,13 +1,13 @@
+@import url(/dist/css/about.css);
+@import url(/dist/css/Contacts.css);
+@import url(/dist/css/Projects.css);
+@import url(/dist/css/Skills.css);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("about.css");
-@import url("Skills.css");
-@import url("Projects.css");
-@import url("Contacts.css");
-
-
-body, html, * {
+body,
+html,
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -34,17 +34,47 @@ body::-webkit-scrollbar {
 }
 
 ::-moz-selection {
-  color: #ffffff;
-  background-color: #ebac7f;
+  color: #b10000;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 ::selection {
-  color: #ffffff;
-  background-color: #ebac7f;
+  color: #b10000;
+  background-color: rgba(0, 0, 0, 0);
 }
 
-/* cursor css starts */
-/* cursor css ends */
+.button-back {
+  width: 160px;
+  height: 50px;
+  background-color: black;
+  border: 0px solid black;
+  z-index: 99999999;
+  position: fixed;
+  left: 1540px;
+  top: 735px;
+}
+
+.background-td {
+  top: 100;
+}
+
+.background-3d {
+  z-index: -2;
+  position: fixed;
+}
+
+/* loader css starts */
+.loader {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-color: white;
+  left: 0;
+  right: 0;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+          clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
 /* navbar starts */
 .navbar {
   position: relative;
@@ -74,7 +104,7 @@ body::-webkit-scrollbar {
 .navbar a:hover {
   padding: 0px;
   background-color: transparent;
-  text-shadow: 0q 0q 20q rgb(255, 255, 255);
+  text-shadow: 0Q 0Q 20Q rgb(255, 255, 255);
   color: white;
 }
 
@@ -102,7 +132,7 @@ body::-webkit-scrollbar {
   bottom: 10px;
   text-decoration: none;
   /* mix-blend-mode: multiply;
-  filter: contrast(1); */
+    filter: contrast(1); */
   left: 40px;
   top: 2px;
 }
@@ -129,16 +159,16 @@ body::-webkit-scrollbar {
 .navbar-button:hover {
   padding: 5px;
   background-color: transparent;
-  box-shadow: 0q 0q 20q white;
+  box-shadow: 0Q 0Q 20Q white;
   font-weight: bold;
 }
 
 @keyframes resume {
   /* 50%{
-      box-shadow: 0q 0q 20q;
-  } */
+        box-shadow: 0q 0q 20q;
+    } */
   100% {
-    box-shadow: 0q 0q 20q;
+    box-shadow: 0Q 0Q 20Q;
   }
 }
 /* navbar ends */
@@ -180,6 +210,7 @@ body::-webkit-scrollbar {
   font-weight: bold;
   font-family: var(--font);
   font-size: 70px;
+  color: #ffffff;
 }
 
 .home-content span {
