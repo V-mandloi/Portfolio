@@ -1,9 +1,4 @@
 var v1 = gsap.timeline();
-// var h1 = document.querySelector(".about");
-
-// window.addEventListener("scroll", () => {
-//   h1.style.right = 50 + "px";
-// });
 
 gsap.to(".about", {
   x: 1300,
