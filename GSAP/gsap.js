@@ -48,3 +48,14 @@ v3.to(".home-content, .scroll-downs", {
   scale: 0.5,
   // transform: translate(50% 50%),
 });
+
+// gsap.to("background-3d", {
+//   opacity: 0,
+//   scrollTrigger: {
+//     trigger: "#about",
+//     scroller: "body",
+//     markers: true,
+//     // start: "top 150%",
+//     // end: "top 80%",
+//   },
+// });

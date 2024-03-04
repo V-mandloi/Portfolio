@@ -1,4 +1,14 @@
 .skills-page-size {
   width: auto;
   height: 100vh;
+  position: relative;
+}
+.skills-page-size h1 {
+  font-family: "roboto";
+  font-size: 8vw;
+  font-weight: bold;
+  color: #17161f;
+  position: absolute;
+  right: 0;
+  top: 0;
 }/*# sourceMappingURL=Skills.css.map */

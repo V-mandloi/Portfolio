@@ -10,12 +10,14 @@ toggleButton.addEventListener("click", function () {
 // loader js starts
 
 // const loaderContainer = document.querySelector(".loader-container");
-// const pageContaint = document.querySelector("#home");
+const pageContaint = document.querySelector("#home");
 
-// window.addEventListener("load", () => {
-//   loaderContainer.classList.add("hidden");
-//   pageContaint.classList.add("visible");
-// });
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    loaderContainer.classList.add("hidden");
+    pageContaint.classList.add("visible");
+  }, 2000); // Delay hiding for 2 seconds (adjust as needed)
+});
 
 // loader js ends
 
@@ -154,64 +156,3 @@ $(".mousey").click(function () {
 //     });
 // }
 // mouse animation click scroll ends
-
-// shweta code
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     // sare section ko select kiya &button ko
-//     const sections = document.querySelectorAll("section");
-//     const scrollButton = document.getElementById("scrollButton");
-
-//     let currentSectionIndex = 0;
-//     //   button par listener
-//     scrollButton.addEventListener("click", function () {
-
-//         // scrollToSection --> mtlb hai ki jo section mila hia use() use hisab se wo smoth scroll krega
-//         scrollToSection(currentSectionIndex);
-//         currentSectionIndex++;
-//         //   console.log(currentSectionIndex);
-//     });
-
-//     window.addEventListener("scroll", function () {
-//         // scrollPosition: kitna neeche scroll kiya hua hai secytion me.
-//         const scrollPosition = window.scrollY;
-//         /*   function(section, index) -> iteration mein section variable
-//           mein current section ayega, aur index mein us element ka index . */
-//         sections.forEach(function (section, index) {
-//             // sectionTop: kitni doori hai section ka top document ke top se.
-//             const sectionTop = section.offsetTop;
-//             const sectionBottom = sectionTop + section.clientHeight;
-//             /*  agr ye condition true huyi toh wo smj jayega ki hame cureent section me hi
-//              scroll krna hai abhi or agr glt hui toh next section me move kr degi*/
-
-//             if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-//                 currentSectionIndex = index;
-//             }
-//         });
-//     });
-
-//     function scrollToSection(index) {
-
-//         // index hame currentSectionIndex se milega kyuki hame use function me call krte time as a parametere diya ahai esliye
-//         const sectionTop = sections[index].offsetTop;
-//         const sectionHeight = sections[index].clientHeight;
-
-//         /* sectionTop:  yaani section ka starting point.
-//         windowHeight: Window height, mtlb screen ki height.
-//         sectionHeight: Current section  height.*/
-
-//         //   innerHeight -->"veiwport" screen  height milti hai .
-//         const windowHeight = window.innerHeight;
-
-//         if (sectionHeight < windowHeight) {
-//             // If section height is less than window height, scroll to the center of the section
-//             const scrollTo = sectionTop - (windowHeight - sectionHeight) / 2;
-
-//             // { top: scrollTo, behavior: "smooth" }: Yeh batayega  kitna scroll karna hai, aur kaise karna hai.
-//             window.scrollTo({ top: scrollTo, behavior: "smooth" });
-//         } else {
-//             // If section height is greater than or equal to window height, scroll to the top of the section
-//             window.scrollTo({ top: sectionTop, behavior: "smooth" });
-//         }
-//     }
-// });

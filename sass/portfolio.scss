@@ -61,40 +61,106 @@ body::-webkit-scrollbar {
 
 /* loader css starts */
 
-// .loader-container {
-//   position: fixed;
-//   width: 100vw;
-//   height: 100vh;
-//   // background-color: #000000;
-//   // display: flex;
-//   // justify-content: center;
-//   // align-items: center;
-//   // margin: auto auto;
-//   // z-index: 99999;
-//   //   inset: 0;
-//   //   position: relative;
-//   padding: 0 40%;
-// }
+.loader-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // margin: auto auto;
+  z-index: 99999;
+  inset: 0;
+  // position: relative;
+  // padding: 0 40%;
+  // color: white;
 
-.loader {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  background-color: white;
-  left: 0;
-  right: 0;
-  //   transform: translate(50vw, 0);
-  clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    100% 30%,
-    100% 70%,
-    70% 100%,
-    30% 100%,
-    0% 70%,
-    0% 30%
-  );
+  // div {
+  //   stroke-width: 2;
+
+  //   h1 {
+  //     stroke: #b2b3b1;
+  //   }
+  // }
+
+  svg {
+    width: 50rem;
+    // height: 100px;
+    position: absolute;
+
+    text {
+      stroke-width: 0.5;
+    }
+  }
 }
+
+.loader-text {
+  animation: 4s infinite alternate animation-stroke;
+  stroke: white;
+  font-family: "Outfit", sans-serif;
+  // stroke-dasharray: 100px 30%;
+}
+
+@keyframes animation-stroke {
+  0% {
+    fill: transparent;
+    stroke: white;
+    stroke-width: 1;
+    // stroke-dashoffset: 10%;
+    stroke-dasharray: 0 30%;
+  }
+
+  50% {
+    fill: transparent;
+    stroke: white;
+    stroke-width: 1;
+  }
+
+  80%,
+  100% {
+    fill: white;
+    stroke: white;
+    stroke-width: 0;
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 30% 0;
+  }
+}
+
+.loader-container.hidden {
+  opacity: 0.5;
+  visibility: hidden;
+}
+
+#home {
+  opacity: 0.5;
+  transform: translate3d(0, -1rem, 0);
+}
+
+#home.visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+// .loader {
+//   width: 80px;
+//   height: 80px;
+//   position: absolute;
+//   background-color: white;
+//   left: 0;
+//   right: 0;
+//   //   transform: translate(50vw, 0);
+//   clip-path: polygon(
+//     30% 0%,
+//     70% 0%,
+//     100% 30%,
+//     100% 70%,
+//     70% 100%,
+//     30% 100%,
+//     0% 70%,
+//     0% 30%
+//   );
+// }
 
 /* navbar starts */
 

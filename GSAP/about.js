@@ -1,6 +1,6 @@
 var v1 = gsap.timeline();
 
-gsap.to(".about", {
+v1.to(".about", {
   x: 1300,
   scrollTrigger: {
     trigger: ".about",
@@ -11,13 +11,26 @@ gsap.to(".about", {
   },
 });
 
-gsap.from(".para-animation, .visiblee", {
+v1.from(".para-animation, .visiblee", {
   opacity: 0,
   stagger: 0.5,
   scrollTrigger: {
     trigger: "#about",
     // markers: true,
     pin: true,
+    scrub: true,
+  },
+});
+
+v1.to(".background-td", {
+  opacity: 0,
+  scrollTrigger: {
+    trigger: "#about",
+    // scroller: "body",
+    markers: true,
+    // pin: true,
+    // start: "top 80%",
+    // end: "top",
     scrub: true,
   },
 });

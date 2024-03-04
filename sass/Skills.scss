@@ -3,6 +3,17 @@
 .skills-page-size {
   width: auto;
   height: 100vh;
+  position: relative;
+
+  h1 {
+    font-family: "roboto";
+    font-size: 8vw;
+    font-weight: bold;
+    color: #17161f;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
 
 // skills page ends
