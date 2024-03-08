@@ -22,12 +22,12 @@ v1.from(".para-animation, .visiblee", {
   },
 });
 
-v1.to(".background-td", {
+v1.to(".background-3d", {
   opacity: 0,
   scrollTrigger: {
-    trigger: "#about",
+    trigger: ".skills-content",
     // scroller: "body",
-    markers: true,
+    // markers: true,
     // pin: true,
     // start: "top 80%",
     // end: "top",

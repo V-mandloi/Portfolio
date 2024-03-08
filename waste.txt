@@ -273,3 +273,63 @@ var mouseclick = () => {
 //             }
 //         });
 //     });
+
+        <!-- <div class="home-video">
+            <video autoplay muted loop type="video/mp4" class="home-video-size">
+                <source src="https://assets.website-files.com/5e18a1cc86ccdc5d5a0d353d/6436c09081e7055dd8e3e27c_Hero-2023-lg-transcode.mp4">
+            </video>
+        </div> -->
+
+                        <!-- <a href="https://drive.google.com/file/d/1HWcf7q-p-5cpTPKzazz-qT6DO8pBNI6D/view?usp=sharing" target="_blank">
+                    <li class="navbar-button navbar-links">Resume</li>
+                </a> -->
+
+                                <!-- <h5 class="first-content-greeting">HI! THERE THIS IS</h5>
+                <h2 class="second-content-name">VIKRAM MANDLOI</h2> -->
+                <!-- <h3 class="third-content-profetion">WEB DEVELOPER</h3> -->
+                <br>
+                <!-- <div class="social-logo">
+                    <a href="https://www.linkedin.com/in/vikram-mandloi-49205b241/" target="_blank">
+                        <img src="Images and videos/linkedin.png" class="linked" alt="Linkedin Logo">
+                    </a>
+                    <a href="https://www.instagram.com/_vikram__mandloi_/" target="_blank">
+                        <img src="Images and videos/instagram.png" class="linked" alt="Instagram Logo">
+                    </a>
+                    <a href="https://github.com/V-mandloi" target="_blank">
+                        <img src="Images and videos/github.png" class="linked" alt="Github Logo" >
+                    </a>
+                </div> -->
+
+                // .loader {
+//   width: 80px;
+//   height: 80px;
+//   position: absolute;
+//   background-color: white;
+//   left: 0;
+//   right: 0;
+//   //   transform: translate(50vw, 0);
+//   clip-path: polygon(
+//     30% 0%,
+//     70% 0%,
+//     100% 30%,
+//     100% 70%,
+//     70% 100%,
+//     30% 100%,
+//     0% 70%,
+//     0% 30%
+//   );
+// }
+
+// window.scrollBy(0, 716);
+// for (let i = 0; i <= 716; i++){
+//     console.log(i);
+//     var j =+ 1;
+//     var interval = setInterval(function() {
+//         if(i == 716){
+//             clearInterval(interval);
+//             return;
+//         }
+//             window.scrollBy(0, 50);
+//         }, 20);
+
+// }

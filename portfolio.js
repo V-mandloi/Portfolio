@@ -9,14 +9,12 @@ toggleButton.addEventListener("click", function () {
 
 // loader js starts
 
-// const loaderContainer = document.querySelector(".loader-container");
+const loaderContainer = document.querySelector(".loader-container");
 const pageContaint = document.querySelector("#home");
 
 window.addEventListener("load", () => {
-  setTimeout(() => {
-    loaderContainer.classList.add("hidden");
-    pageContaint.classList.add("visible");
-  }, 2000); // Delay hiding for 2 seconds (adjust as needed)
+  loaderContainer.classList.add("hidden");
+  pageContaint.classList.add("visible");
 });
 
 // loader js ends
@@ -67,20 +65,6 @@ for (var i = 0; i < navMenuAnchorTags.length; i++) {
 }
 
 // smooth scroll js ends
-
-// window.scrollBy(0, 716);
-// for (let i = 0; i <= 716; i++){
-//     console.log(i);
-//     var j =+ 1;
-//     var interval = setInterval(function() {
-//         if(i == 716){
-//             clearInterval(interval);
-//             return;
-//         }
-//             window.scrollBy(0, 50);
-//         }, 20);
-
-// }
 
 // button for next section starts
 
