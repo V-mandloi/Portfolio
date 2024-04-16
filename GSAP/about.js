@@ -22,18 +22,18 @@ v1.from(".para-animation, .visiblee", {
   },
 });
 
-v1.to(".background-3d", {
-  opacity: 0,
-  scrollTrigger: {
-    trigger: ".skills-content",
-    // scroller: "body",
-    // markers: true,
-    // pin: true,
-    // start: "top 80%",
-    // end: "top",
-    scrub: true,
-  },
-});
+// v1.to(".background-3d", {
+//   opacity: 0,
+//   scrollTrigger: {
+//     trigger: ".skills-content",
+//     // scroller: "body",
+//     // markers: true,
+//     // pin: true,
+//     // start: "top 80%",
+//     // end: "top",
+//     scrub: true,
+//   },
+// });
 
 gsap.to(".blink-dash", {
   opacity: 0,

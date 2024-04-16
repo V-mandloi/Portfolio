@@ -21,21 +21,21 @@ window.addEventListener("load", () => {
 
 // cursor js starts
 
-const cursor = document.querySelector(".cursor");
-document.addEventListener("mousemove", (e) => {
-  cursor.setAttribute(
-    "style",
-    "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
-  );
-});
+// const cursor = document.querySelector(".cursor");
+// document.addEventListener("mousemove", (e) => {
+//   cursor.setAttribute(
+//     "style",
+//     "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
+//   );
+// });
 
-document.addEventListener("click", () => {
-  cursor.classList.add("evolut");
+// document.addEventListener("click", () => {
+//   cursor.classList.add("evolut");
 
-  setTimeout(() => {
-    cursor.classList.remove("evolut");
-  }, 500);
-});
+//   setTimeout(() => {
+//     cursor.classList.remove("evolut");
+//   }, 500);
+// });
 
 // cursor js ends
 
